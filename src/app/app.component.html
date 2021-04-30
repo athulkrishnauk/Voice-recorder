@@ -1,0 +1,57 @@
+<div class="container-fluid">
+
+  <div class="row header_div">
+
+    <div class="col-lg-4">
+      
+    </div>
+
+    <div class="col-lg-4 header_style">
+      <h1>Voice Recorder</h1>
+    </div>
+
+    <div class="col-lg-4">
+     
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-4">
+     
+    </div>
+
+    <div class="col-lg-4">
+  
+      <div class="card card_style">
+
+        <button class="btn btn-primary start_btn" (click)="startRecording()" *ngIf="start"> Start Recording </button>
+        <button  class="btn btn-danger stop_btn" (click)="stopRecording()" *ngIf="recording"> Stop Recording </button>
+
+        <div class="clearfix"></div>
+
+        <audio class="audio_ctrl" controls="" *ngIf="record_out"> 
+          <source [src]="sanitize(record_out)" type="audio/wav">
+        </audio>
+
+        <button (click)="retry()"  class="btn btn-danger retry_btn" *ngIf="!start && !recording"> Retry </button>
+
+        <span class="footer_span">Record panel@2021</span>
+      
+      </div>
+      
+    </div>
+
+    <div class="col-lg-4">
+      
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<router-outlet></router-outlet>

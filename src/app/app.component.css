@@ -1,0 +1,63 @@
+.header_div {
+    background-color: aqua;
+}
+
+.header_style {
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card_style {
+    background-color: darkcyan;
+    height: 230px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.start_btn {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 30px; 
+    margin-top: 10px; 
+    width: 298px;
+}
+
+.stop_btn {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    width: 298px;
+    margin-top: 10px; 
+}
+
+.audio_ctrl {
+    margin-top: 10px;
+    outline: none;
+}
+
+.retry_btn {
+    cursor: pointer;
+    background-color: rgb(238, 255, 0);
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.footer_span {
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: #771432;
+}
